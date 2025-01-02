@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+import colors from "colors";
 
 const app = express();
 const PORT = 4000;
@@ -15,5 +16,5 @@ app.get("/furqan", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`the app is listening on port no: ${PORT}`);
+  console.log(`the app is listening on port no: ${PORT}`.bgCyan);
 });
